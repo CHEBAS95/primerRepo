@@ -9,3 +9,9 @@ if (edad<18) {
 const b = ["rojo","blue",12,121];
 b.push(edad);
 console.log(b);
+
+document.querySelectorAll("div").forEach(div => {
+    div.addEventListener("click", (e) => {
+        console.log('click en div', e);
+    });
+});
